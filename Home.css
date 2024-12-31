@@ -205,8 +205,8 @@ box-shadow:  2px 2px rgb(45, 250, 93,0.1)
     box-shadow: 10px 10pxblack;
     opacity: 0;
     transform: translateY(20px); 
-    transition: opacity 1s ease, transform 1s ease; 
-    animation: fadeIn 2s ease forwards;
+     transition: opacity 1s ease, transform 1s ease; 
+    animation: fadeIn 2s ease forwards; 
 }
 .main3{
     padding: 0;
@@ -235,7 +235,7 @@ box-shadow:  2px 2px rgb(45, 250, 93,0.1)
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease, transform 1s ease; 
-    animation: fadeIn 10s ease forwards;
+     animation: fadeIn 10s ease forwards; 
    
 }
 .contest{
@@ -277,6 +277,77 @@ box-shadow:  2px 2px rgb(45, 250, 93,0.1)
     color: black;
     font-size: 30px;
 }
+.Bharati_vidyapeeth {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start; 
+    height: 800px;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(45deg, rgb(45, 250, 93, 0.2), rgba(255, 255, 255, 0.3), rgb(153, 94, 247, 0.2));
+    padding: 20px;
+    margin: 0;
+}
+
+.Bharati_vidyapeeth > h2 {
+    font-size: 2rem;
+    margin: 20px 0; 
+    text-align: center; 
+    white-space: nowrap; 
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+    margin-top: 20px;
+    gap: 20px;
+}
+
+#Bvdu_image {
+    height: 600px;
+    width: 55%; 
+    border-radius: 20px;
+    margin-top: 50px;
+    object-fit: cover;
+    margin-right: 700px;
+}
+
+#Intro {
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+    width: 30%; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    position: relative;
+    bottom: 600px;
+    list-style: disc; 
+    padding-left: 20px; 
+    margin: 0;
+    margin-left: 1100px;
+}
+
+#Intro li{
+    font-size: 20px;
+    line-height: 30px;
+} 
+#Read_more_btn{
+    height: 25px;
+    border-radius: 5px;
+}
+#Read_more_btn a{
+    text-decoration: none;
+    color: black;
+    
+}
+
 .btn{
     height: 50px;
     width: 200px;
@@ -289,33 +360,48 @@ box-shadow:  2px 2px rgb(45, 250, 93,0.1)
     font-size: 20px;
 }
 
-.social_media p{
+ .social_media p{
     font-size: 1rem;
-    /* text-align: left; */
     margin-left: 50px;
-}
+} 
 .social_media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgba(152, 245, 174, 0.2);
+    background-color: #98f5ae33;
     color: black;
-}
-.social_media i{
-    color: black;
-    opacity: 0.5;
-    font-size: 30px;
-    margin-left: 10px;
     
 }
+#media{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-size: 20px;
+       
+}
+
+.social_media i{ 
+    opacity: 0.5;
+    font-size: 25px;
+    margin-left: 10px;
+}
 .social_media h3{
-  display: inline-block;
-  /* top: -100px;  */
-  margin-left: 30px; 
-  font-size: 2rem;
+  display: flex;
+  margin-left: 20px; 
+  line-height: 70px;
+  font-size: 1.5rem;
+  top: 50px;
 }
 #bvp{
-    display: inline;
+    margin: 0;
+    padding: 0;
+    /* display: inline-block; */
+    display: flex;
     bottom: -20px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     height: 100px;
     width: 100px;
     border-top-left-radius: 150%;
@@ -326,10 +412,14 @@ box-shadow:  2px 2px rgb(45, 250, 93,0.1)
 .social_media i:hover{
     color: black;
     opacity: 1;
-}
+} 
+
 .btn:hover{
  background-color: #4f5250;
  
+}
+#Read_more_btn:hover{
+    background-color:green;
 }
 @media(max-width:400px) {
     .card{    
@@ -361,13 +451,13 @@ box-shadow:  2px 2px rgb(45, 250, 93,0.1)
     }
 }
 
-#image:in-viewport {
+ #image:in-viewport {
     animation: fadeIn 10s ease forwards; 
 }
 
 #img :in-viewport {
     animation: fadeIn 2s ease forwards; 
-}
+} 
 .header li a:hover{
     color: rgb(68, 214, 68);
 }
